@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.banner {
+    position: relative;
+    height: 300px; /* Adjust height as necessary */
+    overflow: hidden;
+    text-align: center; /* Center the content horizontally */
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the banner area */
+    opacity: 1; /* Adjust opacity for text readability */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Image stays behind the text */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    color: white; /* Text color */
+    z-index: 2; /* Ensures text is above the image */
+    width: 90%; /* Manage content width */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 10px 0; /* Space below the header */
+}
+
+.motto {
+    font-size: 18px;
+    margin-bottom: 20px; /* Space before the about content */
+}
+
+.about-content {
+    
+    color: white; /* Light text color for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Optional: rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 250px; /* Fixed width for smaller cards */
+    display: inline-block; /* Align cards side by side */
+    vertical-align: top; /* Align the top edges of inline-block elements */
+    margin-right: 20px; /* Space between cards */
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a, .btn {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover, a:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
